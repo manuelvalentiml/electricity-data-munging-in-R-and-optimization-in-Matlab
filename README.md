@@ -1,6 +1,10 @@
 # data-munging-electricity-data-in-R
 Coordinating cross-border electricity interconnection investments and trade in market coupled regions
 
+We use daily bid data retrieved from OMIE, the daily and intraday Iberian electricity market operator1, for the whole year of 2013, with approximately 15.7 million buy and sell bids. The bids are separated for Portugal and Spain, and to simplify, all bids from France and Morocco are assumed to be Spanish.
+For each hourly slot throughout the year, we sort the bids by price and quantity to obtain hourly supply curves and demand curves, as well as equilibrium points. These data are then grouped in a total of 168 distinct operating conditions for different months, weekdays and peak/off-peak periods (the peak occurs between 9 a.m. and 10 p.m.).
+For each operating condition, we obtain linear regressions for the supply and the demand from all the points in the supply and demand curves, respectively, constrained to pass through the average of the equi- librium points of all the operating condition’s hourly slots. This allows us to avoid, for instance, negative equilibrium points, which may result from considering independent supply regressions and demand regressions.
+
 This project contains several files with the following folder structure:
 
   Data/RawData/
