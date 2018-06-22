@@ -1,4 +1,4 @@
-# data-munging-electricity-data-in-R
+# electricity-data-munging-in-R-and-optimization-in-Matlab
 Coordinating cross-border electricity interconnection investments and trade in market coupled regions
 
 We use daily bid data retrieved from OMIE, the daily and intraday Iberian electricity market operator1, for the whole year of 2013, with approximately 15.7 million buy and sell bids. The bids are separated for Portugal and Spain, and to simplify, all bids from France and Morocco are assumed to be Spanish.
